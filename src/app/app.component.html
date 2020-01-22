@@ -1,0 +1,34 @@
+<h1>
+  Visualizzatore di immagini
+</h1>
+
+<!-- structural directives -->
+
+<h2 *ngIf="autoreVisualizzato">Foto scattata da: {{autore}}</h2>
+
+<!-- Property binding -->
+<img [src]="percorsoImmagini[indiceImmagine]">
+
+<!-- String interpolation -->
+<p>{{ descrizioni[indiceImmagine] }}</p>
+
+<!-- Event Binding -->
+<button (click)="indietro()">Indietro</button>
+<button (click)="avanti()">Avanti</button>
+<button (click)="auto()">Auto</button>
+<button (click)="ferma()">Ferma</button>
+
+<br><br>
+<p>Autore</p>
+<!-- Two-way binding -->
+<button (click)="visualizzaAutore()">Visualizza</button>
+<input type="text" [(ngModel)]="autore">
+
+<br><br>
+<p>Velocità</p>
+<input type="number" [(ngModel)]="velocita">
+
+<br><br>
+<img *ngFor="let percorso of percorsoImmagini; let i = index" class="icona" [src]="percorso" (click)="selezionaImmagine(i)">
+
+
