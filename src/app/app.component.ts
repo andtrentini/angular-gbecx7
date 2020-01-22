@@ -21,7 +21,7 @@ export class AppComponent  {
 "https://9714423570r3k9t761lyx98m-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2019/09/1-3-480x360.jpg'"
 ]; */
 
-  percorsoImmagini =  ['./immagini/img1.jpg','./immagini/img104.jpg','./immagini/img105.jpg','./immagini/img2.jpg'];
+  percorsoImmagini =  ['https://github.com/andtrentini/angular-gbecx7/blob/test/src/immagini/img1.jpg?raw=true','https://github.com/andtrentini/angular-gbecx7/blob/test/src/immagini/img104.jpg?raw=true','https://github.com/andtrentini/angular-gbecx7/blob/test/src/immagini/img105.jpg?raw=true','https://github.com/andtrentini/angular-gbecx7/blob/test/src/immagini/img2.jpg?raw=true'];
 
   indiceImmagine = 1;
   velocita = 1000;
